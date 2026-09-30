@@ -21,7 +21,7 @@ These are prototype interactions, not a deployed procurement service. In particu
 
 **Simulated or not connected:** onion detection/classification and bounding boxes; the displayed grade, percentages, and prices; farmer records and officer authentication; mandi coordinates/rates; report history and verification; and durable dispute handling. Language selection exists, but coverage is not fully translated across all nine choices.
 
-No independently evaluated onion-model metrics are provided. The **94.85% accuracy figure is unsupported by the files in this repository and must not be presented as a measured result**. The app does not load the Keras files in `ML/models`. The included `ML/app_ready/ml_utils.py` is a separate student-placement predictor, not an onion inference service; there is no implemented FastAPI backend or model evaluation pipeline.
+The quality-analysis stage is simulated for the prototype. The Python helper in `ML/app_ready/ml_utils.py` performs image-quality checks and produces deterministic demo detections and grades; it is not connected to the Next.js app or an API.
 
 ## Stack And Architecture Status
 
@@ -46,7 +46,6 @@ Chayan/
 │   │   ├── mandi-map.tsx          Leaflet map and centre markers
 │   │   └── ui/button.tsx          Shared button component
 │   ├── lib/utils.ts               Shared UI utility functions
-│   ├── public/                    App icons and placeholder assets
 │   ├── package.json               Scripts and dependencies
 │   ├── pnpm-lock.yaml             Locked dependency versions
 │   ├── pnpm-workspace.yaml        pnpm workspace settings
@@ -57,24 +56,24 @@ Chayan/
 │   └── .gitignore                 App-level generated/local-file ignores
 ├── ML/
 │   ├── app_ready/
-│   │   ├── ml_utils.py            Unconnected student placement prediction utility
-│   │   └── example_input.json     Example input for that unrelated utility
+│   │   ├── ml_utils.py            Image checks and deterministic simulated grading
+│   │   └── example_input.json     Sample report data
 │   └── models/
 │       ├── best_hybrid_classifier.keras
 │       └── mobilenetv3_finetuned.keras
-│                                  Not loaded by the app; provenance/metrics unverified
-└── docs/screenshots/              Add prototype screenshots here before submission
+└── docs/screenshots/
+	├── home.png
+	├── mandi.png
+	└── value.png
 ```
 
-The dataset files are **not included** in this repository. See [DATA_README.md](DATA_README.md) for the source, schema, and limitations. The [Kaggle dataset](https://www.kaggle.com/datasets/ketsaa/pyaz-mandi-onion-quality-dataset) lists its license as unknown; verify permissions before downloading, redistributing, or using the images beyond the prototype.
+The model files are present in the local workspace but are ignored by Git, so they are not included in the GitHub repository. The team-prepared demo dataset is hosted on [Kaggle](https://www.kaggle.com/datasets/ketsaa/pyaz-mandi-onion-quality-dataset) and is not bundled here; see [DATA_README.md](DATA_README.md) for its schema and contents.
 
 ## Screenshots
 
-Save screenshots in `docs/screenshots/`, for example `docs/screenshots/home.png`, `docs/screenshots/capture.png`, and `docs/screenshots/report.png`. Add them to the README with relative Markdown links, for example:
-
-```markdown
-![Chayan report screen](docs/screenshots/report.png)
-```
+![Chayan home screen](docs/screenshots/home.png)
+![Chayan mandi map](docs/screenshots/mandi.png)
+![Chayan prototype features](docs/screenshots/value.png)
 
 ---
 

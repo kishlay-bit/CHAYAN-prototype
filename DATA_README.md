@@ -2,9 +2,9 @@
 
 ## Source And Contents
 
-The demo data was based on the [Pyaz Mandi Onion Quality Dataset](https://www.kaggle.com/datasets/ketsaa/pyaz-mandi-onion-quality-dataset). Dataset files are **not included in the current repository**. The local prototype copy previously inspected contained 1,233 images, 1,233 corresponding JSON metadata files, and a consolidated CSV with 1,233 rows and 24 columns.
+The team-prepared demo dataset for Chayan is hosted as the [Pyaz Mandi Onion Quality Dataset on Kaggle](https://www.kaggle.com/datasets/ketsaa/pyaz-mandi-onion-quality-dataset). Dataset files are **not included in the current repository**. The local prototype copy previously inspected contained 1,233 images, 1,233 corresponding JSON metadata files, and a consolidated CSV with 1,233 rows and 24 columns.
 
-The Kaggle data card says the images were collected from publicly accessible sources. It explicitly identifies the quality, grading, composition, price, location, and report attributes as **synthetically generated**, not manually verified visual ground truth. Do not use these attributes as validated labels or claim model accuracy from them. The Kaggle license is listed as **Unknown**; check rights and attribution requirements before redistribution or production use.
+The Kaggle data card says the images were collected from publicly accessible sources and identifies the quality, grading, composition, price, location, and report attributes as synthetically generated for prototype use. These metadata fields are not expert-verified visual labels. The Kaggle license is listed as **Unknown**; confirm applicable rights before redistribution or production use.
 
 ## CSV Schema
 

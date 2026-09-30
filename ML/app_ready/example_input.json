@@ -1,13 +1,44 @@
 {
-  "cgpa": 7.5,
-  "internships_count": 1,
-  "projects_count": 3,
-  "coding_skill_score": 69.96,
-  "aptitude_score": 65.04,
-  "communication_skill_score": 67.96,
-  "logical_reasoning_score": 66.04,
-  "mock_interview_score": 70.04,
-  "backlogs": 0,
-  "extracurricular_score": 60.08,
-  "leadership_score": 55.11
+  "header": {
+    "issuingAuthority": "Government of India — Department of Consumer Affairs",
+    "appName": "Chayan",
+    "reportTitle": "Onion Quality Report"
+  },
+  "reportId": "OG-2026-NGP-000123",
+  "dateTime": {
+    "date": "2026-09-28",
+    "time": "10:42",
+    "timezone": "IST"
+  },
+  "location": {
+    "district": "Nagpur District",
+    "state": "Maharashtra",
+    "latitude": 21.1458,
+    "longitude": 79.0882
+  },
+  "score": {
+    "value": 82,
+    "maxValue": 100,
+    "grade": "Grade A"
+  },
+  "composition": {
+    "gradeA": 72,
+    "urs": 10,
+    "damaged": 8,
+    "rotten": 4,
+    "sprouted": 3,
+    "undersized": 3,
+    "unit": "%"
+  },
+  "expectedPrice": {
+    "currency": "INR",
+    "unit": "per quintal",
+    "gradeARate": { "min": 2600, "max": 2900 },
+    "ursRate": { "min": 1900, "max": 2200 },
+    "expectedLotRate": { "min": 2530, "max": 2830 },
+    "disclaimer": "Indicative rate based on sample market data. Final rate is decided at the mandi."
+  },
+  "footer": {
+    "note": "System generated report"
+  }
 }
