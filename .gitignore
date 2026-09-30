@@ -1,0 +1,29 @@
+# JavaScript dependencies and generated output
+**/node_modules/
+**/.next/
+**/out/
+**/build/
+**/coverage/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python caches and virtual environments
+**/__pycache__/
+*.py[cod]
+**/.venv/
+**/venv/
+
+# Large model checkpoints; keep distributable weights in Git LFS or artifact storage
+ML/models/*.keras
+ML/models/*.h5
+ML/models/*.pt
+ML/models/*.pth
+ML/models/*.onnx
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
